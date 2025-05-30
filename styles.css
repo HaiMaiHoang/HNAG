@@ -1,0 +1,257 @@
+*{
+    --main-color: #FF9B17;
+}
+
+body{
+    background-color: #eeeeee;
+}
+
+/* QC1 */
+.slider-container {
+    width: 1240px;
+    margin: 20px auto; /* canh giữa */
+    overflow: hidden;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.slider-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+}
+.slider-track img{
+    width: 1240px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Mon Ngon Uu Dai */
+.i-cont-w{
+    background-color: #fff;
+    margin: 36px auto;
+    padding: 8px 0px;
+    max-width: 1240px;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 12px;
+}   
+.cont-name{
+    margin: 16px 64px;
+    width: 50%;
+    color: #F16767;
+    font-size: 32px;
+    font-family: Arial;
+    font-weight: 700;
+}
+.cont-ten-food{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+.ten-food{
+    text-decoration: none;
+    margin: 0 64px;
+    display: flex;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+    .ten-food:hover{
+        color: var(--main-color);
+    }
+
+
+.slider-container2 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%; /* 3 trang = 3 x 100% */
+}
+
+.cont-quan{
+    margin: 24px 64px;
+    display: flex;
+    width: auto;
+}
+    .smo-text{
+        color: #000;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .quan{
+        width: 236px;
+        margin-right: 56px;
+    }
+        .quan-anh{
+            width: 248px;
+            height: 164px;
+        }
+        .quan-name{
+            margin-top: 8px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 550;
+        }
+        .quan-sao{
+            align-items: center;
+            display: flex;
+            gap: 12px;
+        }
+        .quan-sao i{
+            color: #FFD500;
+            font-variation-settings: 'FILL' 1;
+        }
+        .quan-dc{
+            margin-left: 4px;
+            align-items: center;
+            display: flex;
+            gap: 16px;
+        }
+        .bx-location{
+            color:#000;
+        }
+        .quan-sale{
+            align-items: center;
+            display: flex;
+            gap: 16px;
+        }
+        .bx-print-dollar{
+            margin-left: 4px;
+            color: #00F414;
+        }
+/* Bạn chọn được món chưa*/
+    .cont-quan a{
+        text-decoration: none;
+        color:#000
+    }
+    .mon{
+        margin-bottom: 20px;
+        margin-right: 64px;
+        width: 230px;
+        text-decoration: none;
+    }
+        .mon-anh{
+            margin-bottom: 12px;
+        }
+        .mon-name{
+            border-radius: 16px;
+            width: 224px;
+            text-decoration: none;
+            display: flex;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            justify-content: center;
+            padding: 4px;
+        }
+        .mon:hover .mon-name{
+            color: var(--main-color);
+        }
+/* Flash Sale */
+.see-all{
+    margin: auto 64px;
+    width: 45%;
+    text-decoration: none;
+    /* text */
+    color: #F16767;
+    text-align: right;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+    .see-all:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+.cont-sale{
+    display: flex;
+    margin: 0 64px;
+}
+/* Com */
+.cont-chat{
+    max-width: 1112px;
+    display: flex;
+    overflow: auto;
+    overflow-x: auto;
+    margin: 0 64px;
+    padding-bottom: 8px;
+}
+    .chat{
+        width: 440px;
+        flex: 0 0 auto;
+        border: 1px solid #000;
+        border-radius: 10px;
+        padding: 12px 28px;
+        margin-right: 36px;
+    }
+        .chat-top{
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .chat-anh{
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: 1px solid #eee;
+        }
+        .chat-name{
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            padding: 8px;
+            margin-left: 20px;
+            width: 70%;
+        }
+        .chat-top i{
+            width: 20%;
+        }
+        .bx-heart{
+            text-align: right;
+            margin-top: 8px;
+            color: #F16767
+        }
+        .chat-sao{
+            margin-bottom: 12px;
+        }
+            .chat-sao i{
+                color: #FFD500;
+                font-variation-settings: 'FILL' 1;
+            }
+        .chat-text{
+            margin-bottom: 24px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        .chat-timing{
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.28px;
+        }

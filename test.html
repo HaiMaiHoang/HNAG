@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Slider 1200px</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #eee;
+    }
+
+    .slider-container {
+      width: 1200px;
+      margin: 50px auto; /* canh giữa */
+      overflow: hidden;   /* ẩn phần dư ngoài 1200px */
+      border: 2px solid #ccc;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .slider-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider-track img {
+      width: 1200px;
+      height: auto;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slider-track" id="sliderTrack">
+    <img src="https://picsum.photos/id/1015/1200/500" alt="">
+    <img src="https://picsum.photos/id/1016/1200/500" alt="">
+    <img src="https://picsum.photos/id/1018/1200/500" alt="">
+    <img src="https://picsum.photos/id/1020/1200/500" alt="">
+    <img src="https://picsum.photos/id/1021/1200/500" alt="">
+  </div>
+</div>
+
+<script>
+  const track = document.getElementById('sliderTrack');
+  const total = track.querySelectorAll('img').length;
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % total;
+    track.style.transform = `translateX(-${index * 1200}px)`;
+  }, 3000);
+</script>
+
+</body>
+</html>

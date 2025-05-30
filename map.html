@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HOMNAYANGI - Mỗ Lao Hà Đông</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/b-map-style.css" />
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+  <!--NAV BAR-->
+    <header>
+        <h1>HOMNAYANGI</h1>
+        <div style="display: flex; width: 40%; height: 36%; background-color:  #fff; padding: 2px; border-radius: 4px;">     
+            <input type="text" placeholder="Tìm kiếm..." id="header-search" class="input-style"/>
+        </div>
+        <a href="user.html"> <img src="IMG/user-img.avif" width="48px" height="48px" style="border-radius: 50%;"> 
+        </a>
+    </header>
+
+  <div class="detail-head">
+      <a href="index.html">
+          <div class="Home">Home</div></a>     
+      <i class='bx  bx-chevron-right'></i>
+      <a href="category.html">
+          <div class="Home">Catagory</div></a>     
+      <i class='bx  bx-chevron-right'></i> 
+      <a href="detail.html">
+          <div class="Home">Detail</div></a>     
+      <i class='bx  bx-chevron-right'></i>
+      <div class="detail">Map</div>
+  </div> 
+  
+  <div class="map-container">
+    <div class="filter-overlay" id="filter-buttons">
+      <button data-type="Quán ăn">Quán ăn</button>
+      <button data-type="Nhà hàng">Nhà hàng</button>
+      <button data-type="Cafe">Cafe</button>
+      <button data-type="Trà sữa">Trà sữa</button>
+      <button data-type="Ăn vặt">Ăn vặt</button>
+      <button data-type="Buffet">Buffet</button>
+      <button data-type="Nhậu">Nhậu</button>
+      <div class="arrow-button">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+    <div id="map"></div>
+  </div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script/b-map-script.js"></script>
+
+  <!--Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h2 class="footer-title">HOMNAYANGI</h2>
+            <hr class="footer-divider">
+            <div class="footer-top">
+                <div class="footer-links">
+                    <div>
+                        <p>About HOMNAYANGI</p>
+                        <p>About Us</p>
+                    </div>
+                    <div>
+                        <p>FAQs</p>
+                        <p>Help</p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/twitter--v1.png" alt="Twitter"></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-apps">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+            </div>
+            <div class="footer-bottom">
+                <span>Terms of Service</span>
+                <span>Privacy Policy</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

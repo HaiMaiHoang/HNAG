@@ -1,0 +1,182 @@
+*{
+    --main-color: #FF9B17;
+}
+
+/* detail-head */
+.detail-head{
+    display: flex;
+    margin: 20px 136px;
+    align-items: center;
+    /* text */ 
+    color: #000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+    .detail-head a{
+        text-decoration: none;
+        color: #000;
+    }
+    .detail-head a:hover{
+        color: var(--main-color);
+    }
+    .detail{
+        color: var(--main-color);
+    }
+        .cat:hover{
+            cursor: pointer;
+        }
+.search-map{
+    justify-content: space-between;
+    display: flex;
+    gap: 12px;
+    margin: 36px 136px 20px;
+    align-items: center;
+}
+    .search{
+        width: 1160px;
+        border: 1px #000 solid;
+        border-radius: 10px;
+        height: 60px;
+        align-items: center;
+        display: flex;
+    }
+    .search-input{
+        margin-left: 20px;
+        border: none;
+        font-size: 20px;
+    }
+        .search-input:focus-within{
+            outline: none;
+        }
+    .bx-map{
+        font-size: 60px;
+        color: black;
+    }
+        .bx-map:hover{
+            cursor: pointer;
+            color: var(--main-color);
+        }
+.st{
+    display: flex;
+    margin: 20px 136px;
+    justify-content: space-between;
+}
+    .loc{
+        display: flex;
+        width: 148px;
+        height: 56px;
+        border: 1px solid #000;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+        /* text */
+        color: #000;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+    }
+        .loc:hover{
+            background-color: var(--main-color);
+            color: white;
+            cursor: pointer;
+        }
+/* detail-quan */
+a{
+    text-decoration: none;
+}
+.cont-quan{
+    margin: 24px 136px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+    .smo-text{
+        color: #000;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .quan:hover .quan-name{
+        color: var(--main-color);
+    }
+    .quan{
+        width: 236px;
+        margin-right: 56px;
+    }
+        .quan-anh{
+            width: 260px;
+            height: 164px;
+        }
+        .quan-name{
+            margin-top: 8px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 550;
+        }
+        .quan-sao{
+            align-items: center;
+            display: flex;
+            gap: 12px;
+        }
+        .quan-sao i{
+            color: #FFD500;
+            font-variation-settings: 'FILL' 1;
+        }
+        .quan-dc{
+            margin-left: 4px;
+            align-items: center;
+            display: flex;
+            gap: 16px;
+        }
+        .bx-location{
+            color:#000;
+        }
+        .quan-sale{
+            align-items: center;
+            display: flex;
+            gap: 16px;
+        }
+        .bx-print-dollar{
+            margin-left: 4px;
+            color: #00F414;
+        }
+/* page numb */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%; /* 3 trang = 3 x 100% */
+}
+
+.page {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around; /* Canh giữa các thẻ trong page */
+}
+.pagination{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+    .numP{
+        border-radius: 50%;
+        padding: 12px 15px;
+        background-color: white;
+    }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng nhập - HOMNAYANGI</title>
+  <link href="css/b-login.css" rel="stylesheet" />
+  <link href="css/header.css" rel="stylesheet" >
+
+</head>
+<body>
+  <!--NAV BAR-->
+  <header>
+      <h1>HOMNAYANGI</h1>
+  </header>
+
+  <main class="main">
+    <div class="form-box">
+      <h2 class="title">Đăng nhập</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Mật khẩu</label>
+          <input type="password" id="password" required />
+        </div>
+
+        <div class="form-options">
+          <label><input type="checkbox" /> Ghi nhớ</label>
+          <a href="#">Quên mật khẩu?</a>
+        </div>
+
+        <button type="submit" class="btn">Đăng nhập</button>
+      </form>
+
+      <p class="signup">
+        Chưa có tài khoản? <a href="#">Đăng ký ngay</a>
+      </p>
+    </div>
+  </main>
+
+  <script src="script/b-login.js"></script>
+</body>
+</html>
