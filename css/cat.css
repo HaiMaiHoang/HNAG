@@ -1,0 +1,58 @@
+*{
+    --main-color: #FF9B17;
+}
+
+.cat-head{
+    display: flex;
+    margin: 20px 136px;
+    align-items: center;
+    /* text */ 
+    color: #000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+    .cat-head a{
+        text-decoration: none;
+        color: #000;
+    }
+    .cat-head a:hover{
+        color: var(--main-color);
+    }
+    .cat{
+        color: var(--main-color);
+    }
+        .cat:hover{
+            cursor: pointer;
+        }
+/* Mon */
+.cont-mon{
+    align-items: center;
+    margin: 32px 200px;
+    display: flex;
+}
+    .cont-mon a{
+        text-decoration: none;
+    }
+    .cont-mon a:hover .mon-name{
+        color: var(--main-color);
+    }
+    .mon{
+        margin-right: 48px;
+    }
+    .mon-anh{
+        width: 224px;
+        height: 212px;
+        border-radius: 20px;
+    }
+    .mon-name{
+        /* text */
+        color: #000;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+    }

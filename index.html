@@ -1,0 +1,339 @@
+<!DOCTYPE htmlL>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>HNAG</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star" />
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+   <script>
+        function redirectOnClick(e) {
+            e.preventDefault(); // chặn hành động mặc định (vd: đi đến href của <a>)
+            window.location.href = "login.html";
+            document.removeEventListener("click", redirectOnClick);
+        }
+
+        document.addEventListener("click", redirectOnClick);
+    </script>
+</head>
+
+
+<body>
+    <!--NAV BAR-->
+    <header>
+        <h1>HOMNAYANGI</h1>
+        <div style="display: flex; width: 40%; height: 36%; background-color:  #fff; padding: 2px; border-radius: 4px;">     
+            <input type="text" placeholder="Tìm kiếm..." id="header-search" class="input-style"/>
+        </div>
+        <a href="login.html" style="text-decoration: none; color: #111;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;"> 
+            <div style="background-color: white; border-radius: 5px; padding: 11px 20px; width: fit-content;">
+                Đăng nhập/Đăng kí
+            </div>
+        </a>
+    </header>
+
+    <!--QC1-->
+    <div class="slider-container">
+        <div class="slider-track" id="SliderTrack">
+            <img src="p1.png" alt="">
+            <img src="p2.png" alt="">
+            <img src="p3.png" alt="">
+            <img src="p4.png" alt="">
+        </div>
+    </div>
+
+    <!--Mon Ngon Uu Dai-->
+    <div class="i-cont-w">
+        <div class="cont-name">
+            Ưu đãi
+        </div>
+        <div class="cont-ten-food">
+            <div class="ten-food" onclick="gotoPage(0)">Gần tôi</div>
+            <div class="ten-food" onclick="gotoPage(1)">Bán chạy</div>
+            <div class="ten-food" onclick="gotoPage(2)">Gợi ý</div>
+        </div>
+        <div class="slider-container2">
+        <div class="slider" id="slider">
+            <div class="cont-quan">
+                <!--Q1-->
+                <div class="quan">
+                    <img class="quan-anh" src="I-UD-1.png">
+                    <div class="quan-name">Phở thìn</div>
+                    <div class="quan-sao"><i class="material-symbols-outlined">star</i><span class="smo-text">4.5   |   2.4 km</span></div>
+                    <div class="quan-dc"><i class='bx bx-location'></i><span class="smo-text">141 P. Nguyễn Văn Lộc, P. Mộ Lao, Hà Đông, Hà Nội </span></div>
+                    <div class="quan-sale"><i class='bx  bx-print-dollar'></i><span class="smo-text">Flash sale</span></div>
+                </div>
+                <!--Q2-->
+                <div class="quan">
+                    <img class="quan-anh" src="IMG/I/Jolibee.jpg">
+                    <div class="quan-name">Jollibee</div>
+                    <div class="quan-sao"><i class="material-symbols-outlined">star</i><span class="smo-text">4.6   |   3.6 km</span></div>
+                    <div class="quan-dc"><i class='bx bx-location'></i><span class="smo-text">L1-01 Lk Goldsilk Complex, Số 430, P. Cầu Am, Hà Đông, Hà Nội </span></div>
+                    <div class="quan-sale"><i class='bx  bx-print-dollar'></i><span class="smo-text">Flash sale</span></div>
+                </div>
+                <!--Q3-->
+                <div class="quan">
+                    <img class="quan-anh" src="IMG/I/Haidilao.jpg">
+                    <div class="quan-name">Haidilao</div>
+                    <div class="quan-sao"><i class="material-symbols-outlined">star</i><span class="smo-text">4.9   |   6.3 km</span></div>
+                    <div class="quan-dc"><i class='bx bx-location'></i><span class="smo-text">119 Đ. Trần Duy Hưng, Trung Hòa, Cầu Giấy, Hà Nội </span></div>
+                    <div class="quan-sale"><i class='bx  bx-print-dollar'></i><span class="smo-text">Flash sale</span></div>
+                </div>
+                <!--Q4-->
+                <div class="quan">
+                    <img class="quan-anh" src="IMG/I/Dooki.png">
+                    <div class="quan-name">Dooki</div>
+                    <div class="quan-sao"><i class="material-symbols-outlined">star</i><span class="smo-text">3.6   |   5.2 km</span></div>
+                    <div class="quan-dc"><i class='bx bx-location'></i><span class="smo-text">72A, Đ. Nguyễn Trãi, Thượng Đỉnh, Thanh Xuân, Hà Nội </span></div>
+                    <div class="quan-sale"><i class='bx  bx-print-dollar'></i><span class="smo-text">Flash sale</span></div>
+                </div>
+            </div>
+            <!--2-->
+            <div class="cont-quan">
+                <!--Q1-->
+                <div class="quan">
+                    <img class="quan-anh" src="I-UD-1.png">
+                    <div class="quan-name">Phở thìn</div>
+                    <div class="quan-sao"><i class="material-symbols-outlined">star</i><span class="smo-text">4.5   |   2.4 km</span></div>
+                    <div class="quan-dc"><i class='bx bx-location'></i><span class="smo-text">141 P. Nguyễn Văn Lộc, P. Mộ Lao, Hà Đông, Hà Nội </span></div>
+                    <div class="quan-sale"><i class='bx  bx-print-dollar'></i><span class="smo-text">Flash sale</span></div>
+                </div>
+                <!--Q2-->
+                <div class="quan">
+                    <img class="quan-anh" src="IMG/I/Jolibee.jpg">
+                    <div class="quan-name">Jollibee</div>
+                    <div class="quan-sao"><i class="material-symbols-outlined">star</i><span class="smo-text">4.6   |   3.6 km</span></div>
+                    <div class="quan-dc"><i class='bx bx-location'></i><span class="smo-text">L1-01 Lk Goldsilk Complex, Số 430, P. Cầu Am, Hà Đông, Hà Nội </span></div>
+                    <div class="quan-sale"><i class='bx  bx-print-dollar'></i><span class="smo-text">Flash sale</span></div>
+                </div>
+                <!--Q3-->
+                <div class="quan">
+                    <img class="quan-anh" src="IMG/I/Haidilao.jpg">
+                    <div class="quan-name">Haidilao</div>
+                    <div class="quan-sao"><i class="material-symbols-outlined">star</i><span class="smo-text">4.9   |   6.3 km</span></div>
+                    <div class="quan-dc"><i class='bx bx-location'></i><span class="smo-text">119 Đ. Trần Duy Hưng, Trung Hòa, Cầu Giấy, Hà Nội </span></div>
+                    <div class="quan-sale"><i class='bx  bx-print-dollar'></i><span class="smo-text">Flash sale</span></div>
+                </div>
+                <!--Q4-->
+                <div class="quan">
+                    <img class="quan-anh" src="IMG/I/Dooki.png">
+                    <div class="quan-name">Dooki</div>
+                    <div class="quan-sao"><i class="material-symbols-outlined">star</i><span class="smo-text">3.6   |   5.2 km</span></div>
+                    <div class="quan-dc"><i class='bx bx-location'></i><span class="smo-text">72A, Đ. Nguyễn Trãi, Thượng Đỉnh, Thanh Xuân, Hà Nội </span></div>
+                    <div class="quan-sale"><i class='bx  bx-print-dollar'></i><span class="smo-text">Flash sale</span></div>
+                </div>
+            </div>
+            <!--3-->
+            <div class="cont-quan">
+                <!--Q1-->
+                <div class="quan">
+                    <img class="quan-anh" src="I-UD-1.png">
+                    <div class="quan-name">Phở thìn</div>
+                    <div class="quan-sao"><i class="material-symbols-outlined">star</i><span class="smo-text">4.5   |   2.4 km</span></div>
+                    <div class="quan-dc"><i class='bx bx-location'></i><span class="smo-text">141 P. Nguyễn Văn Lộc, P. Mộ Lao, Hà Đông, Hà Nội </span></div>
+                    <div class="quan-sale"><i class='bx  bx-print-dollar'></i><span class="smo-text">Flash sale</span></div>
+                </div>
+                <!--Q2-->
+                <div class="quan">
+                    <img class="quan-anh" src="IMG/I/Jolibee.jpg">
+                    <div class="quan-name">Jollibee</div>
+                    <div class="quan-sao"><i class="material-symbols-outlined">star</i><span class="smo-text">4.6   |   3.6 km</span></div>
+                    <div class="quan-dc"><i class='bx bx-location'></i><span class="smo-text">L1-01 Lk Goldsilk Complex, Số 430, P. Cầu Am, Hà Đông, Hà Nội </span></div>
+                    <div class="quan-sale"><i class='bx  bx-print-dollar'></i><span class="smo-text">Flash sale</span></div>
+                </div>
+                <!--Q3-->
+                <div class="quan">
+                    <img class="quan-anh" src="IMG/I/Haidilao.jpg">
+                    <div class="quan-name">Haidilao</div>
+                    <div class="quan-sao"><i class="material-symbols-outlined">star</i><span class="smo-text">4.9   |   6.3 km</span></div>
+                    <div class="quan-dc"><i class='bx bx-location'></i><span class="smo-text">119 Đ. Trần Duy Hưng, Trung Hòa, Cầu Giấy, Hà Nội </span></div>
+                    <div class="quan-sale"><i class='bx  bx-print-dollar'></i><span class="smo-text">Flash sale</span></div>
+                </div>
+                <!--Q4-->
+                <div class="quan">
+                    <img class="quan-anh" src="IMG/I/Dooki.png">
+                    <div class="quan-name">Dooki</div>
+                    <div class="quan-sao"><i class="material-symbols-outlined">star</i><span class="smo-text">3.6   |   5.2 km</span></div>
+                    <div class="quan-dc"><i class='bx bx-location'></i><span class="smo-text">72A, Đ. Nguyễn Trãi, Thượng Đỉnh, Thanh Xuân, Hà Nội </span></div>
+                    <div class="quan-sale"><i class='bx  bx-print-dollar'></i><span class="smo-text">Flash sale</span></div>
+                </div>
+            </div> 
+        </div>
+        </div>
+    </div>
+
+    <!--Bạn chọn được món chưa-->
+    <div class="i-cont-w">
+        <div style="display: flex; width: 100%;">
+            <div class="cont-name">Bạn chọn được món chưa?</div>
+            <a href="category.html" class="see-all">Xem tất cả</a>
+        </div>
+        <!--cont 1-->
+        <div class="cont-quan">
+            <a href=""><div class="mon"> <!--mon 1-->
+                <img class="mon-anh" src="I-MON-Bmi.png">
+                <div class="mon-name">Bánh mì</div>
+            </div></a>
+            <a href=""><div class="mon"> <!--mon 2-->
+                <img class="mon-anh" src="IMG/Cat/BunBoHue.png">
+                <div class="mon-name">Bún bò huế</div>
+            </div></a>
+            <a href=""><div class="mon"> <!--mon 3-->
+                <img class="mon-anh" src="IMG/Cat/AnVat.png">
+                <div class="mon-name">Ăn vặt</div>
+            </div></a>
+            <a href=""><div class="mon"> <!--mon 4-->
+                <img class="mon-anh" src="IMG/Cat/MyCay.png">
+                <div class="mon-name">Mỳ cay</div>
+            </div></a>
+        </div>
+
+        <div class="cont-quan">
+            <a href=""><div class="mon">
+                <img class="mon-anh" src="IMG/Cat/BunCha.svg">
+                <div class="mon-name">Bún chả</div>
+            </div></a>
+            <a href=""><div class="mon">
+                <img class="mon-anh" src="IMG/Cat/DoUong.png">
+                <div class="mon-name">Đồ uống</div>
+            </div></a>
+            <a href=""><div class="mon">
+                <img class="mon-anh" src="IMG/Cat/GaRan.png">
+                <div class="mon-name">Gà rán</div>
+            </div></a>
+            <a href=""><div class="mon">
+                <img class="mon-anh" src="IMG/Cat/Pho.png">
+                <div class="mon-name">Phở</div>
+            </div></a>
+        </div>
+    </div>
+
+    <img src="I-TaiApp.png" style="margin: 18px auto; display: flex;">
+
+    <!--Flash Sale-->
+    <div class="i-cont-w">
+        <div style="display: flex; width: 100%;">
+            <div class="cont-name">Flash Sale</div>
+            <a href="" class="see-all">Xem tất cả</a>
+        </div>
+        <div class="cont-sale">
+            <img src="IMG/I/I-SALE-1.jpg" width="254px" style="border-radius: 10px; margin-right: 32px; margin-bottom: 32px;">
+            <img src="IMG/I/I-SALE-2.jpg" width="254px" style="border-radius: 10px; margin-right: 32px; margin-bottom: 32px;">
+            <img src="IMG/I/I-SALE-3.jpg" width="254px" style="border-radius: 10px; margin-right: 32px; margin-bottom: 32px;">
+            <img src="IMG/I/I-SALE-4.jpg" width="254px" style="border-radius: 10px; margin-right: 32px; margin-bottom: 32px;">
+        </div>
+        <div class="cont-sale">
+            <img src="IMG/I/I-SALE-5.jpg" width="254px" style="border-radius: 10px; margin-right: 32px; margin-bottom: 32px;">
+            <img src="IMG/I/I-SALE-6.jpg" width="254px" style="border-radius: 10px; margin-right: 32px; margin-bottom: 32px;">
+            <img src="IMG/I/I-SALE-7.jpg" width="254px" style="border-radius: 10px; margin-right: 32px; margin-bottom: 32px;">
+            <img src="IMG/I/I-SALE-8.jpg" width="254px" style="border-radius: 10px; margin-right: 32px; margin-bottom: 32px;">
+        </div>
+    </div>
+    
+    <!--Com-->
+    <div class="i-cont-w">
+        <div style="display: flex; width: 100%;">
+            <div class="cont-name">Cộng đồng</div>
+            <a href="" class="see-all">Xem tất cả</a>
+        </div>
+        <div class="cont-chat">
+            <div class="chat">
+                <div class="chat-top">
+                    <img src="I-COM/1.jpg" class="chat-anh">
+                    <span class="chat-name">Anatony đã đánh giá Bún cá Đức Bắc</span>
+                    <i class='bx  bx-heart'  ></i> 
+                </div>               
+                <div class="chat-sao">
+                    <i class="material-symbols-outlined">star</i>
+                    <i class="material-symbols-outlined">star</i>
+                    <i class="material-symbols-outlined">star</i>
+                    <i class="material-symbols-outlined">star</i>
+                    <i class="material-symbols-outlined">star</i>
+                </div>
+                <div class="chat-text">Đến quán vào giờ khuya khi vừa đến Hà Nội. Quán có không gian trang trí theo kiểu cổ kính, anh chị nhân viên khá thân thiện, order và lên món nhanh.Món phở tái nạm ăn ngọt nước, vị đậm, bánh quẩy dùng kèm ăn lạ miệng. Giá dao động 60-70k đánh giá phù hợp. Tuy nhiên nếu có thể quán cho thêm tương đen để cho những khách có thói quen dùng để chấm thức ăn. Đánh giá trải nghiệm khá tốt, 
+                    sẽ ghé lại ăn khi đến HN.</div>
+                <div class="chat-timing">1 giờ trước</div>
+            </div>
+            <div class="chat">
+                <div class="chat-top">
+                    <img src="I-COM/2.jpg" class="chat-anh">
+                    <span class="chat-name">Tenz đã đánh giá Phở Thìn</span>
+                    <i class='bx  bx-heart'  ></i> 
+                </div>               
+                <div class="chat-sao">
+                    <i class="material-symbols-outlined">star</i>
+                    <i class="material-symbols-outlined">star</i>
+                    <i class="material-symbols-outlined">star</i>
+                    <i class="material-symbols-outlined">star</i>
+                    <i class="material-symbols-outlined">star</i>
+                </div>
+                <div class="chat-text">Mặc dù quán bán cơm là chính nhưng mà món mì của quán lại nổi hơn =))) và cũng siêu ngon nữa. Nước dùng thơm và thịt cũng mềm, ăn cùng với nhau siêu hợp.Mình đi với 2 bạn khác, order có 2 nồi mà ăn no căng bụng luôn.Mọi người đến ăn thử nhé (ăn thử cơm cho quán vui nữa nha =))</div>
+                <div class="chat-timing">3 giờ trước</div>
+            </div>
+            <div class="chat">
+                <div class="chat-top">
+                    <img src="I-COM/3.jpg" class="chat-anh">
+                    <span class="chat-name">Mpapé đã đánh giá KFC Hà Đông</span>
+                    <i class='bx  bx-heart'  ></i> 
+                </div>               
+                <div class="chat-sao">
+                    <i class="material-symbols-outlined">star</i>
+                    <i class="material-symbols-outlined">star</i>
+                    <i class="material-symbols-outlined">star</i>
+                    <i class="material-symbols-outlined">star</i>
+                    <i class="material-symbols-outlined">star</i>
+                </div>
+                <div class="chat-text">Mặc dù quán bán cơm là chính nhưng mà món mì của quán lại nổi hơn = và cũng siêu ngon nữa. Nước dùng thơm và thịt cũng mềm, ăn cùng với nhau siêu hợp.Mình đi với 2 bạn khác, order có 2 nồi mà ăn no căng bụng luôn.Mọi người đến ăn thử nhé (ăn thử cơm cho quán vui nữa nha =))</div>
+                <div class="chat-timing">6 giờ trước</div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <h2 class="footer-title">HOMNAYANGI</h2>
+            <hr class="footer-divider">
+            <div class="footer-top">
+                <div class="footer-links">
+                    <div>
+                        <p>About HOMNAYANGI</p>
+                        <p>About Us</p>
+                    </div>
+                    <div>
+                        <p>FAQs</p>
+                        <p>Help</p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/twitter--v1.png" alt="Twitter"></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-apps">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+            </div>
+            <div class="footer-bottom">
+                <span>Terms of Service</span>
+                <span>Privacy Policy</span>
+            </div>
+        </div>
+    </footer>
+</body>
+<!--JS link-->
+    <script type="text/javascript" src="script.js"></script>
+</html>

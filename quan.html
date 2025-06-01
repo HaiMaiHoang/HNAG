@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOMNAYANGI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/b-quan.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div id="overlay" onclick="togglePopup()"></div>
+
+  <div id="popup">
+    <span class="close" onclick="togglePopup()">×</span>
+    <img src="https://qrcode-gen.com/images/qrcode-default.png" alt="Mã QR" style="width:260px">
+    <p style="text-align:center;margin-top:12px">
+      Bạn hãy quét mã QR này để đặt món trên ứng dụng nhé
+    </p>
+  </div>
+
+   <div class="cart-icon" onclick="togglePopup()">🛒</div>
+
+<!--NAV BAR-->
+  <header>
+      <h1>HOMNAYANGI</h1>
+      <div style="display: flex; width: 40%; height: 36%; background-color:  #fff; padding: 2px; border-radius: 4px;">     
+          <input type="text" placeholder="Tìm kiếm..." id="header-search" class="input-style"/>
+      </div>
+      <a href="user.html"> <img src="IMG/user-img.avif" width="48px" height="48px" style="border-radius: 50%;"> 
+      </a>
+  </header>
+
+  <section class="shop-info">
+    <!--DETAIL-head-->
+    <div class="detail-head">
+        <a href="home.html">
+            <div class="Home">Home</div></a>     
+        <i class='bx  bx-chevron-right'></i>
+        <a href="category.html">
+            <div class="Home">Catagory</div></a>     
+        <i class='bx  bx-chevron-right'></i> 
+        <a href="detail.html">
+            <div class="Home">Detail</div></a>     
+        <i class='bx  bx-chevron-right'></i>
+        <a href="map.html">
+            <div class="Home">Map</div></a>     
+        <i class='bx  bx-chevron-right'></i> 
+        <div class="detail">Restaurant</div>
+    </div> 
+    </div> 
+    <h2>Bún Bò Huế An Cựu - Duy Tân</h2>
+    <p class="subtitle">Bún Bò Huế</p>
+  
+    <div class="meta">
+      <span class="star">★ 4.5</span>
+      <span class="dot">•</span>
+      <span class="time">⏱ 20 phút</span>
+      <span class="dot">•</span>
+      <span class="distance">1.5 km</span>
+    </div>
+  
+    <p class="hours">Giờ mở cửa: Hôm nay 07:00 - 14:00 · 17:00 - 21:00</p>
+  </section>  
+
+  <nav>
+    <a href="#udai">Ưu đãi hôm nay</a>
+    <a href="#danhcho">Dành cho bạn</a>
+    <a href="#monchinh">Món chính</a>
+    <a href="#dogoi">Đồ gọi thêm</a>
+    <a href="#douong">Đồ uống</a>
+    <a href="#danhgia">Đánh giá</a>
+  </nav>
+  
+  <div id="udai"     class="section">
+    <h2>Ưu đãi hôm nay</h2>
+    <div class="cards">
+      <div class="card" data-id="1">
+        <img src="udhn/Tô đầy đủ.webp" alt="food">
+        <div class="card-content">
+          <h3>Tô đầy đủ</h3>
+          <p>Đã bao gồm tiền hộp thân thiện môi trường</p>
+          <div class="price">55.000đ</div>
+        </div>
+        <button class="add-btn">+</button>
+        <span class="quantity-badge" style="display:none;">0</span>
+      </div>
+
+      <div class="card">
+        <img src="udhn/Tô đặc biệt.webp" alt="food">
+        <div class="card-content">
+          <h3>Tô đặc biệt</h3>
+          <p>Thịt bò tươi ngon, nước dùng đậm đà</p>
+          <div class="price">45.000đ</div>
+        </div>
+        <button class="add-btn">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="danhcho"  class="section">
+    <h2>Dành cho bạn</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="dcb/Tô mọc viên.webp" alt="food">
+        <div class="card-content">
+          <h3>Tô mọc viên</h3>
+          <p>Đã bao gồm tiền hộp thân thiện môi trường</p>
+          <div class="price">55.000đ</div>
+        </div>
+        <button class="add-btn">+</button>
+      </div>
+
+      <div class="card">
+        <img src="dcb/Tô thường.webp" alt="food">
+        <div class="card-content">
+          <h3>Tô thường</h3>
+          <p>Thịt bò tươi ngon, nước dùng đậm đà</p>
+          <div class="price">45.000đ</div>
+        </div>
+        <button class="add-btn">+</button>
+      </div>
+
+      <div class="card">
+        <img src="dcb/Tô tròn xoe.webp" alt="food">
+        <div class="card-content">
+          <h3>Tô tròn xoe</h3>
+          <p>Chả nướng thơm lừng, nước mắm pha chuẩn vị</p>
+          <div class="price">50.000đ</div>
+        </div>
+        <button class="add-btn">+</button>
+      </div>
+
+      <div class="card">
+        <img src="dcb/Tô đầy đủ.webp" alt="food">
+        <div class="card-content">
+          <h3>Tô đầy đủ</h3>
+          <p>Đã bao gồm tiền hộp thân thiện môi trường</p>
+          <div class="price">55.000đ</div>
+        </div>
+        <button class="add-btn">+</button>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/01-Phuong-Mon%20ngon&congthuc/1.%20pho%20ha%20noi/canh-nau-pho-ha-noi-xua-mang-huong-vi-kinh-do-cua-80-nam-ve-truoc-1.jpg" alt="food">
+        <div class="card-content">
+          <h3>Phở bò</h3>
+          <p>Thịt bò tươi ngon, nước dùng đậm đà</p>
+          <div class="price">45.000đ</div>
+        </div>
+        <button class="add-btn">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="monchinh" class="section">
+    <h2>Món chính</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="dcb/Tô đầy đủ.webp" alt="food">
+        <div class="card-content">
+          <h3>Tô đầy đủ</h3>
+          <p>Đã bao gồm tiền hộp thân thiện môi trường</p>
+          <div class="price">55.000đ</div>
+        </div>
+        <button class="add-btn">+</button>
+      </div>
+
+      <div class="card">
+        <img src="dcb/Tô đặc biệt.webp" alt="food">
+        <div class="card-content">
+          <h3>Tô đặc biệt</h3>
+          <p>Thịt bò tươi ngon, nước dùng đậm đà</p>
+          <div class="price">45.000đ</div>
+        </div>
+        <button class="add-btn">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="dogoi"    class="section">
+    <h2>Đồ gọi thêm</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="dgt/Tóp mỡ.webp" alt="food">
+        <div class="card-content">
+          <h3>tóp mỡ</h3>
+          <p>Đã bao gồm tiền hộp thân thiện môi trường</p>
+          <div class="price">15.000đ</div>
+        </div>
+        <button class="add-btn">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="douong"   class="section">
+    <h2>Đồ uống</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="du/Trà sâm dứa trân châu.webp" alt="food">
+        <div class="card-content">
+          <h3>Trà sâm dứa trân châu</h3>
+          <p>Đã bao gồm tiền hộp thân thiện môi trường</p>
+          <div class="price">36.000đ</div>
+        </div>
+        <button class="add-btn">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="danhgia"  class="section">
+    <h2>Đánh giá</h2>
+    <div class="rating">
+    <div class="summary">
+      <div class="summary-left">
+        <div class="progress-row">
+          <span>5</span>
+          <div class="progress-bar"><span style="width: 70%"></span></div>
+        </div>
+        <div class="progress-row">
+          <span>4</span>
+          <div class="progress-bar"><span style="width: 20%"></span></div>
+        </div>
+        <div class="progress-row">
+          <span>3</span>
+          <div class="progress-bar"><span style="width: 10%"></span></div>
+        </div>
+        <div class="progress-row">
+          <span>2</span>
+          <div class="progress-bar"><span style="width: 2%"></span></div>
+        </div>
+        <div class="progress-row">
+          <span>1</span>
+          <div class="progress-bar"><span style="width: 5%"></span></div>
+        </div>
+      </div>
+      <div class="summary-right">
+        <div class="score">4.4</div>
+        <div class="stars">★★★★★</div>
+        <div>158 đánh giá</div>
+      </div>
+    </div>
+    <button class="write-review-btn">Viết đánh giá</button>
+  </div>
+
+    <div class="user-review">
+      <div class="info">
+        <div class="user-meta">
+          <div class="avatar"></div>
+          <div>
+            <div class="name">Anonymous đã đánh giá quán ăn</div>
+            <div class="time">1 giờ trước</div>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="text">
+        Đến quán vào giờ khuya khi vừa đến Hà Nội. Quán có không gian trang trí theo kiểu cổ kính, anh chị nhân viên khá thân thiện, order và lên món nhanh. Món phở tái nạm ăn ngọt nước, vị đậm, bánh quẩy đúng kèm ăn là miệng. Giá dao động 60-70k đánh giá phù hợp. Tuy nhiên nếu có thể quán cho thêm tương đen để cho những khách có thói quen dùng để chấm thức ăn. Đánh giá trải nghiệm khá tốt, sẽ ghé lại lần khi đến HN.
+      </div>
+      <div class="actions">
+        <div style="color: red; font-size: 18px">♡</div>
+        <button class="toggle-replies">Phản hồi (2)</button>
+      </div>
+      <div class="child-replies">
+    <div class="child-reply">
+      <div class="header">
+        <div class="avatar"></div>
+        <div>
+          <div class="name">Anonymous đã phản hồi</div>
+          <div class="time">30p trước</div>
+        </div>
+      </div>
+      <p class="reply-text">Mình cũng thấy vậy. Quán này có món phở rất ngon!</p>
+      <div class="actions">
+          <div style="color: red; font-size: 18px">♡</div>
+          <button>Phản hồi</button>
+        </div>
+    </div>
+
+    <div class="child-reply">
+      <div class="header">
+        <div class="avatar"></div>
+        <div>
+          <div class="name">Anonymous đã phản hồi</div>
+          <div class="time">25p trước</div>
+        </div>
+      </div>
+      <p class="reply-text">Mình lại thấy quán này không ngon lắm</p>
+      <div class="actions">
+          <div style="color: red; font-size: 18px">♡</div>
+          <button>Phản hồi</button>
+        </div>
+    </div>
+  </div>
+    </div>
+
+    <div class="user-review">
+      <div class="info">
+        <div class="user-meta">
+          <div class="avatar"></div>
+          <div>
+            <div class="name">Anonymous đã đánh giá quán ăn</div>
+            <div class="time">1 giờ trước</div>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="text">
+        Quán có không gian thoáng đãng, sạch sẽ và dễ chịu. Nhân viên phục vụ nhanh nhẹn, nhiệt tình. Món ăn trình bày đẹp, hương vị vừa miệng, đậm đà. Giá cả hợp lý, phù hợp với chất lượng. Chắc chắn sẽ quay lại lần sau để thử thêm nhiều món khác.
+      </div>
+      <div class="actions">
+        <div style="color: red; font-size: 18px">♡</div>
+        <button class="toggle-replies">Phản hồi (2)</button>
+      </div>
+      <div class="child-replies">
+    <div class="child-reply">
+      <div class="header">
+        <div class="avatar"></div>
+        <div>
+          <div class="name">Anonymous đã phản hồi</div>
+          <div class="time">30p trước</div>
+        </div>
+      </div>
+      <p class="reply-text">Mình cũng thấy vậy. Quán này có món phở rất ngon!</p>
+      <div class="actions">
+          <div style="color: red; font-size: 18px">♡</div>
+          <button>Phản hồi</button>
+        </div>
+    </div>
+
+    <div class="child-reply">
+      <div class="header">
+        <div class="avatar"></div>
+        <div>
+          <div class="name">Anonymous đã phản hồi</div>
+          <div class="time">25p trước</div>
+        </div>
+      </div>
+      <p class="reply-text">Mình lại thấy quán này không ngon lắm</p>
+      <div class="actions">
+          <div style="color: red; font-size: 18px">♡</div>
+          <button>Phản hồi</button>
+        </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="footer-container">
+    <h2 class="footer-title">HOMNAYANGI</h2>
+    <hr class="footer-divider">
+
+    <div class="footer-top">
+      <div class="footer-links">
+        <div>
+          <p>About HOMNAYANGI</p>
+          <p>About Us</p>
+        </div>
+        <div>
+          <p>FAQs</p>
+          <p>Help</p>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" alt="Facebook"></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/twitter--v1.png" alt="Twitter"></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+    <div class="footer-apps">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+    </div>
+
+    <div class="footer-bottom">
+      <span>Terms of Service</span>
+      <span>Privacy Policy</span>
+    </div>
+  </div>
+</footer>
+  
+<script src="script/b-quan.js"></script>
+  
+</body>
+</html>

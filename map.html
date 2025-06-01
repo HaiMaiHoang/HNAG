@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HOMNAYANGI - Mỗ Lao Hà Đông</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/b-map.css" />
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+      <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+  <!--NAV BAR-->
+    <header>
+      <h1>HOMNAYANGI</h1>
+      <div style="display: flex; width: 40%; height: 36%; background-color:  #fff; padding: 2px; border-radius: 4px;">     
+          <input type="text" placeholder="Tìm kiếm..." id="header-search" class="input-style"/>
+      </div>
+      <a href="user.html"> <img src="IMG/user-img.avif" width="48px" height="48px" style="border-radius: 50%;"> 
+      </a>
+  </header>
+  <!--DETAIL-head-->
+    <div class="detail-head">
+        <a href="index.html">
+            <div class="Home">Home</div></a>     
+        <i class='bx  bx-chevron-right'></i>
+        <a href="category.html">
+            <div class="Home">Catagory</div></a>     
+        <i class='bx  bx-chevron-right'></i> 
+        <a href="detail.html">
+            <div class="Home">Detail</div></a>     
+        <i class='bx  bx-chevron-right'></i> 
+        <div class="detail">Map</div>
+    </div> 
+
+  <div class="search-bar">
+    <input type="text" placeholder="Tìm kiếm địa điểm..." id="search-input" />
+  </div>
+  <div class="map-container">
+    <div class="filter-overlay" id="filter-buttons">
+      <button data-type="Quán ăn">Gần tôi</button>
+      <button data-type="Nhà hàng">Trending</button>
+      <button data-type="Cafe">Quán nổi tiếng</button>
+      <button data-type="Trà sữa">Deal hời</button>
+      <button data-type="Ăn vặt">Đặc sản</button>
+      <button data-type="Buffet">Nhà hàng</button>
+      <button data-type="Nhậu">Tại chỗ</button>
+      <div class="arrow-button">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+    <div id="map"></div>
+    <div id="fixed-popup" class="fixed-popup hidden"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script/b-map.js"></script>
+</body>
+</html>
